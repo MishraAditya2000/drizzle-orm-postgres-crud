@@ -1,7 +1,7 @@
 import { pgTable, integer, varchar, boolean, date } from "drizzle-orm/pg-core";
-import { timestamps } from "../helper/timestamps.js";
-import { flags } from "../helper/flags.js";
-import { roles } from "../helper/enums.js";
+import { timestamps } from "./timestamps.js";
+import { flags } from "./flags.js";
+import { roles } from "./enums.js";
 //pgEnum is used for enum values
 export const user = pgTable('users', {
     /**

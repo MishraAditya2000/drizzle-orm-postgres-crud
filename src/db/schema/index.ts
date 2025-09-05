@@ -1,1 +1,0 @@
-import * as userSchema from "./user.js";

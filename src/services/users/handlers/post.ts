@@ -1,9 +1,7 @@
-import { createUser } from "../users-queries";
-import {Request,Response} from 'express';
-export const userRegistration = async (req:Request, res:Response): Promise<Response> => {
-  try {
-    return res.status(200).json({ message: "Working" });
-  } catch (error:any) {
-    return res.status(error.status).json(error);
-  }
-};
+import { asyncHandler } from "../../../utils/asyncHandler.js";
+
+
+export const  userRegistration=asyncHandler(async(req,res)=>{
+  // return res.status(200).json({message:"Working"})
+  throw new Error("Unexpected Error")
+})
